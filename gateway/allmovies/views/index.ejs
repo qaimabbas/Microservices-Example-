@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body  style="background-color: #396EB0;">
+
+  <h1 style="margin-left: 300px; font-size: 80px; color: aliceblue;">ALL MOVIES</h1>
+
+</div>
+
+<tbody>
+  <%if (records.length >0){ %>
+  <% records.forEach(function(row){ %>
+  
+<tr>
+    <ul>
+      <div style="border: brown 2px inset;
+        background-color:cornflowerblue;
+        text-align: center;
+        width:300px;
+        box-shadow: 10px 10px 5px black;
+          
+      ">
+      <div style="display: flex; color:#AF460F;text-align: center;  ">
+
+    
+      
+      <td ><h2><%= row.moviename %></h2></td>
+      
+        </div> 
+        <div style="display: flex; color:#DED9C4;text-align: center;">
+        
+      <td  ><%= row.category %></td>
+      <p>Category</p>
+      </div>
+    </div>
+    <td>
+      <div style="margin-left: 50px;">
+      
+      </div>
+      </td>
+    </ul>
+  </tr>
+  <% })}else{ %>
+    <tr>
+        <td colspan="6">No Record Found</td>
+        
+      </tr>
+    <% } %>
+</tbody>
+
+</div>
+    
+</body>
+</html>
