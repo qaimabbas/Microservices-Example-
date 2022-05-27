@@ -6,7 +6,7 @@ const app = express();
 app.set("view engine","ejs");
 
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/allmovies", { useUnifiedTopology:true})
+mongoose.connect("mongodb://localhost:27017/kidsmovies", { useUnifiedTopology:true})
 .then(()=> console.log('Connected to db '));
 
 const moviesSchema= new mongoose.Schema({
